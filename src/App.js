@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
+import WeatherCard from './components/WeatherCard';
 import './App.css';
 
 function App() {
+  const cities = ['Eilat', 'London', 'New York', 'Alaska'];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>מזג האוויר מסביב לעולם</h1>
+      <div className="card-container">
+        {cities.map((city, index) => (
+          <WeatherCard key={index} city={city} />
+        ))}
+      </div>
     </div>
   );
 }

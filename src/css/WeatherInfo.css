@@ -1,0 +1,57 @@
+.weather-info {
+  direction: rtl;
+  text-align: center;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.text-side {
+  flex: 1;
+}
+
+.icon-side {
+  font-size: 32px;
+}
+
+.city-name {
+  margin: 0;
+  font-size: 24px;
+  color: #0077b6;
+  font-weight: bold;
+}
+
+.description {
+  margin: 4px 0 0 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.weather-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.weather-cell {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.weather-cell p {
+   font-size: 16px;
+  font-weight: bold;
+  color: #222;
+}
+
+.weather-cell strong {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 8px; 
+}
